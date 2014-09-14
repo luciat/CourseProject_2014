@@ -62,7 +62,7 @@ colnames(avgSet) <- vNames
 ind <- 1
 for (indA in 1:na) {
         for (indS in 1:ns) {
-                avgSet$Activity[ind] <- activityNameSet[indA]
+                avgSet$Activity[ind] <- activityLabels[indA]
                 avgSet$Subject[ind] <- indS
                 vInd <- c(activitySet==indA & subjectSet==indS)
                 for (indC in 1:nCol) {
